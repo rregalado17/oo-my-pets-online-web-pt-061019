@@ -64,12 +64,9 @@ class Owner
   end
   
    def sell_pets
-    @pets.collect do |type, cat|
-      cat.collect {|kitty| 
-        kitty.mood = "nervous"}
-      pets
+    @pets.all.each do |sold|
+      fold.mood = 'nervous'
     end
   end
-
 
 end

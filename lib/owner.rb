@@ -64,7 +64,7 @@ class Owner
   end
   
    def sell_pets
-    @pets.all.each do |sold|
+    @pets.each do |sold|
       fold.mood = 'nervous'
     end
   end
